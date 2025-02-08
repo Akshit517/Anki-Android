@@ -45,7 +45,7 @@ class SimpleMessageDialog : AsyncDialogFragment() {
     fun FragmentActivity.dismissSimpleMessageDialog(reload: Boolean) {
         dismissAllDialogFragments()
         if (reload) {
-            context?.startActivityWithNewTask(DeckPicker::class.java)
+            requireContext().startActivityWithNewTask(DeckPicker::class.java)
         }
     }
 
